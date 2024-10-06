@@ -1,5 +1,10 @@
 /* style.css */
 
+.WICIDA {
+    height: 50px;  /* Tinggi gambar */
+    width: auto;   /* Menjaga rasio lebar otomatis */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,27 +19,119 @@ header {
     text-align: center;
 }
 
-nav {
-    margin: 20px;
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* General styling for the navbar */
+.navbar {
+    position: fixed; /* Stick the navbar to the left side */
+    left: 0; /* Align the navbar to the left */
+    top: 0;
+    width: 200px; /* Set the width of the navbar */
+    height: 100vh; /* Full height (from top to bottom of the screen) */
+    background-color: #f7f7f7; /* Light background color */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: flex-start; /* Start items from the top */
+    padding: 20px; /* Add padding inside the navbar */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Light shadow effect */
+    z-index: 100; /* Ensure it stays on top */
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Styling for the nav list */
+.nav-list {
+    width: 200px; /* Adjust width as needed */
+    transition: transform 0.3s ease;
+    transform: translateX(-100%); /* Initially hide the sidebar */
+    position: absolute; /* Ensure it doesn't affect layout */
+    left: 0; /* Position it to the left */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+/* Styling for individual nav items */
+.nav-item {
+    list-style-type: none; /* Remove bullet points */
+    margin-bottom: 20px; /* Space between nav items */
 }
 
-nav ul li a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #bb07e8;
-    color: white;
-    border-radius: 5px;
+/* Styling for nav links */
+.nav-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Darker text color */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px; /* Add padding for clickable area */
+    display: block;
+    transition: background 0.3s, color 0.3s; /* Smooth hover transition */
 }
+
+/* Styling when hovering over nav links */
+.navbar:hover .nav-list {
+    transform: translateX(0); /* Show the sidebar on hover */
+}
+
+
+
+
 
 main {
     padding: 20px;
