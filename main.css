@@ -117,3 +117,85 @@ footer {
     padding: 10px 0;
     width: 100%;
 }
+
+/*news*/
+/* Existing styles... */
+
+/* Roadmap Container */
+.roadmap-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+/* Roadmap Styles */
+.roadmap {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.roadmap h3 {
+    font-size: 24px;
+    color: #bb07e8;
+    margin-bottom: 20px;
+}
+
+.roadmap-timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.roadmap-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #bb07e8;
+}
+
+.roadmap-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.roadmap-item::before {
+    content: '';
+    position: absolute;
+    left: -34px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bb07e8;
+}
+
+.roadmap-date {
+    font-weight: bold;
+    color: #bb07e8;
+    margin-bottom: 5px;
+}
+
+.roadmap-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.roadmap-description {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .roadmap-container {
+        flex-direction: column;
+    }
+}
+
+/* ... rest of your existing styles */
