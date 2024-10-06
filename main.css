@@ -1,21 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: Arial, sans-serif; /*Jenis Font*/
+    margin: 0; /*This removes any default margin and padding from the body element, ensuring that the content starts directly at the edges of the viewport.*/
+    padding: 0; /* likewise*/
+    background-color: #f0f0f0; /*coloring the web bg*/
+    color: #333; /*coloring the text*/
+    display: flex; /*This enables flexbox layout for the body element, allowing you to arrange its children in a flexible manner.*/
+    flex-direction: column; /*Vertical*/
+    min-height: 100vh; /*This ensures that the body element occupies the entire vertical height of the viewport, even if the content doesn't fill the entire space.*/
 }
 
 header {
-    background-color: #bb07e8;
+    background-color: #530866;
     color: white;
     padding: 1em;
     text-align: center;
     display: flex;
-    align-items: center;
+    align-items: center; /*put every element inside this class centered*/
     justify-content: center;
 }
 
@@ -44,7 +44,7 @@ h1 {
     left: 0;
     top: 100%;
     transform: translateX(-100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     border: 1px solid #000;
     z-index: 1000;
 }
@@ -73,25 +73,42 @@ h1 {
 }
 
 main {
+    background-image: url("bg.jpg");
+    background-size: cover; /* Adjust to fit the background */
+    background-position: center; /* Center the image */
     flex: 1;
     display: flex;
     flex-direction: column;
     border: 2px solid #ccc;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 8px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.about-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center; /*put every element inside this class centered*/
+    justify-content: center;
+}
 
 h2 {
     font-size: 28px;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 p {
     line-height: 1.6;
+    color: #f9f9f9;
 }
 
 .model {
@@ -111,7 +128,7 @@ p {
 }
 
 footer {
-    background-color: #bb07e8;
+    background-color:  #530866;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -119,8 +136,6 @@ footer {
 }
 
 /*news*/
-/* Existing styles... */
-
 /* Roadmap Container */
 .roadmap-container {
     display: flex;
