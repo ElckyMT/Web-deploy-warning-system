@@ -25,6 +25,17 @@ header {
     margin-right: 20px;
 }
 
+.imgnws {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically if the container has a height */
+    height: 100%; /* Optional: Set a height for vertical centering */
+}
+
+.gif-image {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+}
 h1 {
     font-size: 24px;
     margin: 0;
