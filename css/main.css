@@ -83,6 +83,25 @@ h1 {
     color: #bb07e8;
 }
 
+@media (max-width: 768px) {
+    .nav-list {
+        position: static;
+        transform: none;
+        width: 100%;
+        border: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-item {
+        margin-bottom: 0;
+    }
+
+    .nav-link {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
 main {
     background-image: url("/images/bg.jpg");
     background-size: cover; /* Adjust to fit the background */
