@@ -5,13 +5,13 @@ export default function Home() {
         <main data-aos="zoom-in" data-aos-delay="1000">
             <h2>Welcome to the Early Warning System</h2>
             <p>
-                This system is designed to help predict the academic performance
+                This system is designed to help classify and predict the academic performance
                 of students at PRODITI WICIDA, providing early warnings for
                 potential graduation issues.
             </p>
             <div className="features">
                 <h5>Features</h5>
-                <h4> Coming Soon</h4>
+                <h4> Classifying students</h4>
             </div>
 
             <div
