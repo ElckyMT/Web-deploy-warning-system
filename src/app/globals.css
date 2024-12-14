@@ -83,6 +83,51 @@ h1 {
   color: #bb07e8;
 }
 
+/*button download*/
+/* Styling untuk label yang ada di dalam div */
+label {
+  display: block;  /* Membuat label menjadi block element */
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;  /* Jarak antara label dan input */
+}
+
+/* Styling untuk input[type="file"] */
+input[type="file"] {
+  display: flex;  /* Menjadikan input file block-level */
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1em;
+  color: #555;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+
+/* Styling untuk tombol button */
+button {
+  display: block;
+  width: 10%;  /* Tombol memenuhi lebar kontainer */
+  padding: 22px;
+  margin-top: 5px; /* Jarak tombol dari elemen sebelumnya */
+  background-color:  #bb07e8;  /* Warna hijau */
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+  background-color: #1100fb;  /* Warna hijau lebih gelap saat hover */
+}
+
 @media (max-width: 768px) {
   .nav-list {
       position: static;
@@ -293,3 +338,4 @@ footer {
 #add-commit-btn:hover {
   background-color: #0056b3;
 }
+

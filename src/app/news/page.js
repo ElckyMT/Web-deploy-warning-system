@@ -79,12 +79,7 @@ const newsPage = () => {
                     </div>
                 </section>
                 
-                <section id="news-section">
-                    <h2>Latest Commits</h2>
-                    <ul id="commit-list"></ul>
-                    <input type="text" id="commit-input" placeholder="Enter commit message" />
-                    <button id="add-commit-btn">Add Commit</button>
-                </section>
+
             </div>
         </main>
     );

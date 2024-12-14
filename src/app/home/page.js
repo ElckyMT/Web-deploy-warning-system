@@ -28,7 +28,7 @@ const HomePageContent = () => {
 
     return (
         <div>
-            <h1>Home</h1>
+            <h1>Ini Untuk Testing API saja ma</h1>
             {/* Render the message, e.g., "jalan yuk yukina sayangku" */}
             <p>{message || "Loading..."}</p>
         </div>

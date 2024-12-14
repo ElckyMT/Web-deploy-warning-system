@@ -41,7 +41,7 @@ const AnalysisPage = () => {
     // Fungsi untuk mengirim file ke backend untuk klasifikasi
     const handleClassify = async () => {
         if (!file) {
-            console.error("No file uploaded");
+            console.error("Upload dulu filenya");
             return;
         }
 
@@ -85,7 +85,7 @@ const AnalysisPage = () => {
             </div>
 
             {/* Tombol Unggah File untuk Klasifikasi */}
-            <div>
+            <div >
                 <h2>Upload File for Classification</h2>
                 <div>
                     <label>
