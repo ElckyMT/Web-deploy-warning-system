@@ -9,11 +9,8 @@ const AnalysisPage = () => {
     const [numpy, setNumpy] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    // State untuk input dan hasil klasifikasi
-    const [sl, setSL] = useState(0.0);
-    const [sw, setSW] = useState(0.0);
-    const [pl, setPL] = useState(0.0);
-    const [pw, setPW] = useState(0.0);
+    // State untuk file unggahan dan hasil klasifikasi
+    const [file, setFile] = useState(null);
     const [classificationResult, setClassificationResult] = useState(null);
 
     // Ambil data pandas dan numpy
@@ -34,11 +31,29 @@ const AnalysisPage = () => {
         fetchData();
     }, []);
 
-    // Fungsi untuk mengirim permintaan klasifikasi ke backend
+    // Fungsi untuk menangani unggahan file
+    const handleFileUpload = (e) => {
+        const uploadedFile = e.target.files[0];
+        setFile(uploadedFile);
+        console.log("File uploaded:", uploadedFile.name);
+    };
+
+    // Fungsi untuk mengirim file ke backend untuk klasifikasi
     const handleClassify = async () => {
+        if (!file) {
+            console.error("No file uploaded");
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('file', file);
+
         try {
-            const url = `/api/v1/classify?sl=${sl}&sw=${sw}&pl=${pl}&pw=${pw}`;
-            const response = await fetch(url);
+            const response = await fetch('/api/v1/classify-file', {
+                method: 'POST',
+                body: formData,
+            });
+
             const data = await response.json();
             setClassificationResult(data.result);
         } catch (error) {
@@ -50,8 +65,7 @@ const AnalysisPage = () => {
         <div>
             <main>
                 <h2>About This System</h2>
-                <p>Masih Ngambil Data cug sabar</p>
-                <p>Masih lama ya xD</p>
+                <p>Akses data sudah didapatkan, setelah model selesai akan langsung dideploy disini</p>
             </main>
 
             <div className="model">
@@ -62,7 +76,7 @@ const AnalysisPage = () => {
                         <div>
                             <p>Pandas Model: {JSON.stringify(pandas)}</p>
                             <p>Numpy Data: {JSON.stringify(numpy)}</p>
-                            <p>{pandas?.Hasil}</p> {/* Gunakan optional chaining untuk menghindari error */}
+                            <p>{pandas?.Hasil}</p>
                         </div>
                     ) : (
                         <p>Data tidak ditemukan.</p>
@@ -70,21 +84,21 @@ const AnalysisPage = () => {
                 )}
             </div>
 
-            {/* Input dan Tombol untuk Klasifikasi */}
+            {/* Tombol Unggah File untuk Klasifikasi */}
             <div>
-                <h2>Classify Using Model</h2>
+                <h2>Upload File for Classification</h2>
                 <div>
-                    <label>Nilai: <input type="number" value={sl} onChange={(e) => setSL(parseFloat(e.target.value))} /></label>
-                    <label>IPK: <input type="number" value={sw} onChange={(e) => setSW(parseFloat(e.target.value))} /></label>
-                    <label>JUmlah SKS: <input type="number" value={pl} onChange={(e) => setPL(parseFloat(e.target.value))} /></label>
-                    <label>Kehadiran: <input type="number" value={pw} onChange={(e) => setPW(parseFloat(e.target.value))} /></label>
+                    <label>
+                        Upload CSV or Excel File:
+                        <input type="file" accept=".csv, .xls, .xlsx" onChange={handleFileUpload} />
+                    </label>
                 </div>
                 <button onClick={handleClassify}>Classify</button>
             </div>
 
             {/* Menampilkan Hasil Klasifikasi */}
             <div className="model">
-                <p>Classification Result: {classificationResult ? classificationResult : "Masih nggak tahu ini cak"}</p>
+                <p>Classification Result: {classificationResult ? classificationResult : "Belum ada hasil klasifikasi"}</p>
             </div>
         </div>
     );

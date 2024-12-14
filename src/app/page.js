@@ -11,7 +11,7 @@ export default function Home() {
             </p>
             <div className="features">
                 <h5>Features</h5>
-                <h4> Classifying students</h4>
+                <h4> Classifying students based on their status</h4>
             </div>
 
             <div
