@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
                 <header>
                     <img
                         className="WICIDA"
-                        src="https://qqzumjdawvvrqegltuqq.supabase.co/storage/v1/object/sign/img/LOGO_STMIK_WiCiDa.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWcvTE9HT19TVE1JS19XaUNpRGEucG5nIiwiaWF0IjoxNzMxNDM2NDY5LCJleHAiOjIwNDY3OTY0Njl9.fAT3x7zC7n8kaavDjk12RHnyms2tuMKo1B_OLAuSCEo&t=2024-11-12T18%3A34%3A29.278Z"
+                        src="https://drive.google.com/file/d/1fftUa3D9SX2yWa6_r6_Ovfxlvhz76eR_/view?usp=drive_link"
                         alt="WICIDA Logo"
                     />
                     <h1>Early Warning System Kelulusan PRODITI WICIDA</h1>
@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
                             <Link href="/news" className="nav-link">News</Link>
                         </li>
                         <li>
-                            <Link href="/home?name=yukina" className="nav-link">Sapa waifu saya</Link>
+                            <Link href="/home?name=Tenochtitlan" className="nav-link">Sapa waifu saya</Link>
                         </li>
                     </ul>
                 </nav>
