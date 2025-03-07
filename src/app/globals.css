@@ -20,7 +20,7 @@ header {
 }
 
 .WICIDA {
-  height: 50px;
+  height: 100px;
   width: auto;
   margin-right: 20px;
 }
@@ -165,7 +165,6 @@ main {
   align-items: center; /*put every element inside this class centered*/
   justify-content: center;
 }
-
 h2 {
   font-size: 28px;
   color: #333;
@@ -187,9 +186,9 @@ p {
 
 .gif-image,
 .model img {
-  max-width: 100%;
+  max-width: 200%;
   height: auto;
-  width: 300px;
+  width: 1000px;
   object-fit: cover;
 }
 

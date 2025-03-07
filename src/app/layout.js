@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
                 <header>
                     <img
                         className="WICIDA"
-                        src="https://drive.google.com/file/d/1fftUa3D9SX2yWa6_r6_Ovfxlvhz76eR_/view?usp=drive_link"
+                        src="https://zibjtwzlwwtdqsxstngp.supabase.co/storage/v1/object/sign/img/LOGO_STMIK_WiCiDa.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWcvTE9HT19TVE1JS19XaUNpRGEucG5nIiwiaWF0IjoxNzQxMzQ4NzI0LCJleHAiOjE3NDM5NDA3MjR9.HmDz_nyLovhV8uizSFshnjxRYjvYD9RVGoXDH5hGa04"
                         alt="WICIDA Logo"
                     />
                     <h1>Early Warning System Kelulusan PRODITI WICIDA</h1>
@@ -46,22 +46,22 @@ export default function RootLayout({ children }) {
                 <nav className="navbar">
                     <ul className="nav-list">
                         <li className="nav-item">
-                            <Link href="/" className="nav-link">Home</Link>
+                            <Link href="/" className="nav-link">Beranda</Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/about" className="nav-link">About</Link>
+                            <Link href="/about" className="nav-link">Tentang Sistem</Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/analysis" className="nav-link">Data analysis</Link>
+                            <Link href="/analysis" className="nav-link">Mesin Klasifikasi</Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/contact" className="nav-link">Contact</Link>
+                            <Link href="/contact" className="nav-link">Kontak</Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/news" className="nav-link">News</Link>
+                            <Link href="/news" className="nav-link">Berita</Link>
                         </li>
                         <li>
-                            <Link href="/home?name=Tenochtitlan" className="nav-link">Sapa waifu saya</Link>
+                            <Link href="/home?name=Tenochtitlan" className="nav-link">Testing API</Link>
                         </li>
                     </ul>
                 </nav>

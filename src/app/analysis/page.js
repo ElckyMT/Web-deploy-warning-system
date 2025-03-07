@@ -64,8 +64,8 @@ const AnalysisPage = () => {
     return (
         <div>
             <main>
-                <h2>About This System</h2>
-                <p>Akses data sudah didapatkan, setelah model selesai akan langsung dideploy disini</p>
+                <h2>Cara Menggunakan</h2>
+                <p>Upload file CSV/XLS pada kotak upload dibawah(Lebih disarankan CSV)</p>
             </main>
 
             <div className="model">
@@ -86,19 +86,19 @@ const AnalysisPage = () => {
 
             {/* Tombol Unggah File untuk Klasifikasi */}
             <div >
-                <h2>Upload File for Classification</h2>
+                <h2>Upload File disini</h2>
                 <div>
                     <label>
-                        Upload CSV or Excel File:
+                        hanya mendukung CSV dan Excel File:
                         <input type="file" accept=".csv, .xls, .xlsx" onChange={handleFileUpload} />
                     </label>
                 </div>
-                <button onClick={handleClassify}>Classify</button>
+                <button onClick={handleClassify}>Klasifikasikan</button>
             </div>
 
             {/* Menampilkan Hasil Klasifikasi */}
             <div className="model">
-                <p>Classification Result: {classificationResult ? classificationResult : "Belum ada hasil klasifikasi"}</p>
+                <p>Hasil Klasifikasi: {classificationResult ? classificationResult : "Belum ada hasil klasifikasi"}</p>
             </div>
         </div>
     );

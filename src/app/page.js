@@ -3,15 +3,15 @@ import Image from "next/image";
 export default function Home() {
     return (
         <main data-aos="zoom-in" data-aos-delay="1000">
-            <h2>Welcome to the Early Warning System</h2>
+            <h2>
+            Selamat Datang di Early Warning System</h2>
             <p>
-                This system is designed to help classify and predict the academic performance
-                of students at PRODITI WICIDA, providing early warnings for
-                potential graduation issues.
+            Sistem ini dirancang untuk membantu mengklasifikasikan dan memprediksi resiko kelulusan mahasiswa PRODITI WICIDA, memberikan peringatan dini terhadap potensi masalah kelulusan.
             </p>
             <div className="features">
-                <h5>Features</h5>
-                <h4> Classifying students based on their status</h4>
+            <h4>  Fitur </h4>
+            <h5>Melakukan klasifikasi prediktif terhadap resiko kelulusan mahasiswa</h5>
+                
             </div>
 
             <div
@@ -20,7 +20,7 @@ export default function Home() {
                 data-aos-delay="2000"
             >
                 <section className="roadmap website-roadmap">
-                    <h3>Pembimbing 1</h3>
+                    <h3>Dosen Pembimbing Utama</h3>
                     <div className="roadmap-timeline">
                         <div className="roadmap-item">
                             <div className="roadmap-date">
@@ -31,7 +31,7 @@ export default function Home() {
                 </section>
 
                 <section className="roadmap model-roadmap">
-                    <h3>Pembimbing 2</h3>
+                    <h3>Dosen Pembimbing Pendamping</h3>
                     <div className="roadmap-timeline">
                         <div className="roadmap-item">
                             <div className="roadmap-date">
