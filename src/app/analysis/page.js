@@ -100,7 +100,9 @@ const AnalysisPage = () => {
             <div className="model">
                 <p>Hasil Klasifikasi: {classificationResult ? classificationResult : "Belum ada hasil klasifikasi"}</p>
             </div>
+            
         </div>
+        
     );
 };
 

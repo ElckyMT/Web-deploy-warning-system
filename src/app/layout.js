@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
                 <header>
                     <img
                         className="WICIDA"
-                        src="https://zibjtwzlwwtdqsxstngp.supabase.co/storage/v1/object/sign/img/LOGO_STMIK_WiCiDa.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWcvTE9HT19TVE1JS19XaUNpRGEucG5nIiwiaWF0IjoxNzQxMzQ4NzI0LCJleHAiOjE3NDM5NDA3MjR9.HmDz_nyLovhV8uizSFshnjxRYjvYD9RVGoXDH5hGa04"
+                        src="https://zibjtwzlwwtdqsxstngp.supabase.co/storage/v1/object/sign/img/LOGO_STMIK_WiCiDa.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWcvTE9HT19TVE1JS19XaUNpRGEucG5nIiwiaWF0IjoxNzQ0MDczNDczLCJleHAiOjE3NzU2MDk0NzN9.ULKtrTxNGu5BbtU3pVBAgepR8vUOq7P7-6L8ztuG9O4"
                         alt="WICIDA Logo"
                     />
                     <h1>Early Warning System Kelulusan PRODITI WICIDA</h1>
